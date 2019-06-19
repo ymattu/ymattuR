@@ -29,6 +29,8 @@ has_internet <- function() {
 
 
 #' Apply Multiple Functions to ONE Vector
+#' @param x A Vector
+#' @param ... Function Names
 #' @return list
 #' @examples
 #' inverse_map(c(20, 100, 30), min, max)

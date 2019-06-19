@@ -6,6 +6,11 @@
 \usage{
 inverse_map(x, ...)
 }
+\arguments{
+\item{x}{A Vector}
+
+\item{...}{Function Names}
+}
 \value{
 list
 }

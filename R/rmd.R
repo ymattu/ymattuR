@@ -9,10 +9,10 @@
 #' @param toc Logical. If TRUE then set `toc = true`.
 #' @param self_contained Logical. If FALSE, then set "self_contained: false".
 #' @param css Charactor. Set `css: `.
+#' @param katex Logical. Set `includes: `.
 #' @param load_p Charactor vector. Set package names if you want to load.
 #' @importFrom glue glue
 #' @export
-
 rmd_template <- function(file, path = ".", type = "html", systime = TRUE,
                        title = "", subtitle = "", author = "", toc = FALSE,
                        self_contained = TRUE, css = NULL, katex = FALSE,

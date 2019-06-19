@@ -29,6 +29,8 @@ rmd_template(file, path = ".", type = "html", systime = TRUE,
 
 \item{css}{Charactor. Set `css: `.}
 
+\item{katex}{Logical. Set `includes: `.}
+
 \item{load_p}{Charactor vector. Set package names if you want to load.}
 }
 \description{
