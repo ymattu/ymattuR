@@ -1,0 +1,21 @@
+Package: ymattuR
+Type: Package
+Title: Utilities for ymattu
+Version: 0.1.0
+Author: ymattu
+Maintainer: ymattu <mattu.yuya@gmail.com>
+Description: Tools library which @y__mattu often uses. Almost all functions are
+    designed for @y__mattu.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Authors@R: person('Yuya', 'Matsumura', email='mattu.yuya@gmail.com', role=c('aut', 'cre'))
+RoxygenNote: 6.1.1
+Imports: 
+    glue,
+    magrittr,
+    stringr,
+    rstudioapi,
+    here,
+    stringi,
+    purrr
