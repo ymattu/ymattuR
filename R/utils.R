@@ -1,3 +1,14 @@
+#' inverse of \%in\%
+#' @description borrowed from Hmisc. See %in%. Original %in% is: match(x, table,
+#'   nomatch = 0L) > 0L
+#' @param x is the vector of values to be matched
+#' @param table is actually a vector, to be matched against
+#' @return logical vector of length of x
+#' @export
+"%nin%" <- function(x, table) {
+  match(x, table, nomatch = 0) == 0
+}
+
 #' Get The OS Type
 #' @return OS Type (chr)
 #' @export
@@ -41,3 +52,12 @@ inverse_map <- function(x, ...){
   names(lst) <- as.character(mthd)
   return(lst)
 }
+
+#' Whether a Pakckage is Installed
+#' @return Logical
+#' @export
+is_installed <- function(pkg) {
+  system.file(package = pkg) != ""
+}
+
+

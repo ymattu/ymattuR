@@ -1,7 +1,7 @@
 Package: ymattuR
 Type: Package
 Title: Utilities for ymattu
-Version: 0.1.1
+Version: 0.1.2
 Author: ymattu
 Maintainer: ymattu <mattu.yuya@gmail.com>
 Description: Tools library which @y__mattu often uses. Almost all functions are
@@ -18,6 +18,8 @@ Imports:
     rstudioapi,
     here,
     stringi,
-    purrr
+    purrr,
+    lubridate,
+    stats
 Suggests: 
     testthat (>= 2.1.0)
