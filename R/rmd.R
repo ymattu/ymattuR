@@ -69,7 +69,7 @@ rmd_template <- function(file, path = ".", type = "html", systime = TRUE,
   } else {
     if(sum(type %in% "revealjs")) {
       css_c <- paste0("\n    css: ",
-                      system.file("inst/for_revealjs.css", package = "ymattuR"))
+                      system.file("for_revealjs.css", package = "ymattuR"))
     } else {
       css_c <- NULL
     }
