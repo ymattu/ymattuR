@@ -19,3 +19,5 @@ Imports:
     here,
     stringi,
     purrr
+Suggests: 
+    testthat (>= 2.1.0)
