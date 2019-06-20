@@ -52,12 +52,3 @@ inverse_map <- function(x, ...){
   names(lst) <- as.character(mthd)
   return(lst)
 }
-
-#' Whether a Pakckage is Installed
-#' @return Logical
-#' @export
-is_installed <- function(pkg) {
-  system.file(package = pkg) != ""
-}
-
-

@@ -20,6 +20,8 @@ Imports:
     stringi,
     purrr,
     lubridate,
-    stats
+    stats,
+    utils,
+    tools
 Suggests: 
     testthat (>= 2.1.0)

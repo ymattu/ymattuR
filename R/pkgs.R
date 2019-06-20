@@ -1,10 +1,17 @@
+#' Whether a Pakckage is Installed
+#' @param pkg string of the pakcage name to find
+#' @return Logical
+#' @export
+is_installed <- function(pkg) {
+  system.file(package = pkg) != ""
+}
+
 #' Find minimum R version required for package
 #'
 #' Recursively search dependencies for R version, and find the highest stated R
 #' version requirement.
 #' @source Based on ideas from
 #'   http://stackoverflow.com/questions/38686427/determine-minimum-r-version-for-all-package-dependencies
-#' @param pkg string with name of package to check
 #' @examples
 #' base <- c(
 #'   "base", "compiler", "datasets", "grDevices", "graphics",
@@ -25,6 +32,7 @@
 #' @importFrom tools package_dependencies
 #' @importFrom utils available.packages contrib.url compareVersion
 #' @importFrom stringr str_subset str_replace_all
+#' @param pkg string with name of package to check
 #' @export
 min_r_version <- function(pkg) {
   avail <- available.packages(
