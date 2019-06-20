@@ -78,7 +78,7 @@ rmd_template <- function(file, path = ".", type = "html", systime = TRUE,
   if(katex == T) {
     katex_html <- system.file("inst/include_katex.html", package = "ymattuR")
     katex_c <- paste0("\n    mathjax: NULL\n    includes:\n      in_header: ",
-                      system.file("inst/include_katex.html", package = "ymattuR"))
+                      system.file("iinclude_katex.html", package = "ymattuR"))
   } else {
     katex_c <- NULL
   }
