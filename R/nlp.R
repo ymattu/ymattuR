@@ -24,7 +24,7 @@ install_mecab <- function() {
 #' @importFrom tidyr separate
 #' @importFrom dplyr mutate_if filter select summarise
 mecab_wakati_impl <- function (string, tagger_param = list(l = 2, d = NULL),
-                          extract_pattern) {
+                          extract_pattern = NULL) {
   if (length(x = tagger_param) > 0) {
     tagger_opt_str <- map(names(tagger_param), function (tg) {
         if (!is.null(tagger_param[[tg]]) & is.element(tg, c("l", "d"))) {
@@ -43,7 +43,13 @@ mecab_wakati_impl <- function (string, tagger_param = list(l = 2, d = NULL),
              into = c("pos", "pos1", "pos2", "pos3", "ctype", "cform", "baseform", "orth", "pron"),
              sep = ",",
              fill = "right") %>%
-    filter(str_detect(string = .$pos, pattern = extract_pattern)) %>%
+    {
+      if(!is.null(extract_pattern)) {
+        filter(., str_detect(.$pos, extract_pattern))
+      } else {
+        .
+      }
+    } %>%
     mutate_if(is.factor, as.character) %>%
     select(.data$surface)
 
@@ -67,7 +73,7 @@ mecab_wakati_impl <- function (string, tagger_param = list(l = 2, d = NULL),
 #' }
 #' @importFrom purrr map_chr
 #' @export
-mecab_wakati <- function(str, tagger_param = NULL, extract_pattern) {
+mecab_wakati <- function(str, tagger_param = NULL, extract_pattern = NULL) {
   res <- map_chr(str, ~mecab_wakati_impl(.x,
                                          tagger_param = tagger_param,
                                          extract_pattern = extract_pattern))
