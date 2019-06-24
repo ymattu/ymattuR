@@ -4,7 +4,8 @@
 \alias{mecab_wakati}
 \title{MeCab Wakati}
 \usage{
-mecab_wakati(str, tagger_param = NULL, extract_pattern)
+mecab_wakati(str, tagger_param = list(l = 2, d = NULL),
+  extract_pattern = NULL)
 }
 \arguments{
 \item{str}{string vector}

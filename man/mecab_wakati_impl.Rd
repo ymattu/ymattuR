@@ -4,11 +4,11 @@
 \alias{mecab_wakati_impl}
 \title{MeCab Wakati Impl}
 \usage{
-mecab_wakati_impl(string, tagger_param = list(l = 2, d = NULL),
-  extract_pattern)
+mecab_wakati_impl(str, tagger_param = list(l = 2, d = NULL),
+  extract_pattern = NULL)
 }
 \arguments{
-\item{string}{string}
+\item{str}{string}
 
 \item{tagger_param}{parameters of MeCab Tagger}
 
