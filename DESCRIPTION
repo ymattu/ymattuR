@@ -1,7 +1,7 @@
 Package: ymattuR
 Type: Package
 Title: Utilities for ymattu
-Version: 0.2.2
+Version: 0.2.3
 Author: ymattu
 Maintainer: ymattu <mattu.yuya@gmail.com>
 Description: Tools library which @y__mattu often uses. Almost all functions are

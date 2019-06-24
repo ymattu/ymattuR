@@ -7,3 +7,7 @@
   }
   packageStartupMessage("Be carefull, this package is for ymattu only.")
 }
+
+.onUnload = function(libpath) {
+  library.dynam.unload("ymattuR", libpath)
+}

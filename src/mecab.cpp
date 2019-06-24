@@ -19,10 +19,10 @@ DataFrame mecab_df(std::string str, std::string tagger_opt) {
     }
   }
   delete tagger;
-  return Rcpp::wrap(
+  return wrap(
     DataFrame::create(
-      Rcpp::Named("surface") = surface,
-      Rcpp::Named("feature") = feature
+      Named("surface") = surface,
+      Named("feature") = feature
     )
   );
 }
