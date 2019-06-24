@@ -2,7 +2,7 @@
   if(get_os() %in% c("mac", "linux")) {
     whichmecab <- system("which mecab", intern = T)
     if (is.null(whichmecab)) {
-      message("This pacakge contains some functions that depends on MeCab. Please install it by `install_mecab`")
+      packageStartupMessage("This pacakge contains some functions that depends on MeCab. Please install it by `install_mecab`")
     }
   }
   packageStartupMessage("Be carefull, this package is for ymattu only.")
