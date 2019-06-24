@@ -19,6 +19,7 @@ install_mecab <- function() {
 #' @param string string
 #' @param tagger_param parameters of MeCab Tagger
 #' @param extract_pattern POS regex
+#' @importFrom magrittr %>%
 #' @importFrom purrr map
 #' @importFrom stringr str_c str_detect
 #' @importFrom tidyr separate
