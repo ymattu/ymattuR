@@ -1,6 +1,7 @@
-#' 信頼区間を算出する関数
+#' Calculate Confidential Inteval
+#'
 #' @param sample 事後サンプルベクトル
-#' @param interval 信頼区間の%
+#' @param interval 信頼区間の\%
 #' @importFrom stats quantile
 #' @export
 calc_ci <- function(sample, interval = 95) {
@@ -10,13 +11,13 @@ calc_ci <- function(sample, interval = 95) {
   return(c(lower, upper))
 }
 
-#' RMSEを計算する関数
+#' Calculate RMSE
 #' @param true 真値のベクトル(1個でも良い)
 #' @param est 推定値のベクトル
 #' @param n サンプルサイズ
 #' @export
 calc_rmse <- function(true, est, n = NULL) {
-  if(!idntical(length(true), length(est))) {
+  if(!identical(length(true), length(est))) {
     stop("Length of True and Est is different")
   }
   if(is.null(n)){
@@ -26,7 +27,7 @@ calc_rmse <- function(true, est, n = NULL) {
   return(res)
 }
 
-#' R2を計算する関数
+#' Calculate R2
 #' @param true 真値のベクトル(1個でも良い)
 #' @param est 推定値のベクトル
 #' @param n サンプルサイズ
@@ -42,7 +43,7 @@ calc_r2 <- function(true, est, n = NULL) {
   return(res)
 }
 
-#' ROC曲線の描画、AUC計算
+#' Calculate AUC and Plot ROC Curve
 #' @param actual 真値のベクトル
 #' @param score 予測値のベクトル
 #' @importFrom ggplot2 ggplot geom_path scale_x_continuous scale_y_continuous theme ggtitle geom_text

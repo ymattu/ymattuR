@@ -2,15 +2,15 @@
 % Please edit documentation in R/ml.R
 \name{calc_ci}
 \alias{calc_ci}
-\title{信頼区間を算出する関数}
+\title{Calculate Confidential Inteval}
 \usage{
 calc_ci(sample, interval = 95)
 }
 \arguments{
 \item{sample}{事後サンプルベクトル}
 
-\item{interval}{信頼区間の%}
+\item{interval}{信頼区間の\%}
 }
 \description{
-信頼区間を算出する関数
+Calculate Confidential Inteval
 }

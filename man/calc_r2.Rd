@@ -2,7 +2,7 @@
 % Please edit documentation in R/ml.R
 \name{calc_r2}
 \alias{calc_r2}
-\title{R2を計算する関数}
+\title{Calculate R2}
 \usage{
 calc_r2(true, est, n = NULL)
 }
@@ -14,5 +14,5 @@ calc_r2(true, est, n = NULL)
 \item{n}{サンプルサイズ}
 }
 \description{
-R2を計算する関数
+Calculate R2
 }

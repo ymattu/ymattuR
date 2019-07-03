@@ -2,7 +2,7 @@
 % Please edit documentation in R/ml.R
 \name{plot_roc}
 \alias{plot_roc}
-\title{ROC曲線の描画、AUC計算}
+\title{Calculate AUC and Plot ROC Curve}
 \usage{
 plot_roc(actual, score)
 }
@@ -12,5 +12,5 @@ plot_roc(actual, score)
 \item{score}{予測値のベクトル}
 }
 \description{
-ROC曲線の描画、AUC計算
+Calculate AUC and Plot ROC Curve
 }

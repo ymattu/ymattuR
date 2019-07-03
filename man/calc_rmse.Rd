@@ -2,7 +2,7 @@
 % Please edit documentation in R/ml.R
 \name{calc_rmse}
 \alias{calc_rmse}
-\title{RMSEを計算する関数}
+\title{Calculate RMSE}
 \usage{
 calc_rmse(true, est, n = NULL)
 }
@@ -14,5 +14,5 @@ calc_rmse(true, est, n = NULL)
 \item{n}{サンプルサイズ}
 }
 \description{
-RMSEを計算する関数
+Calculate RMSE
 }
