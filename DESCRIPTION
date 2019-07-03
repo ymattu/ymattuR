@@ -6,7 +6,7 @@ Author: ymattu
 Maintainer: ymattu <mattu.yuya@gmail.com>
 Description: Tools library which @y__mattu often uses. Almost all functions are
     designed for @y__mattu.
-Depends: R (>= 2.10)
+Depends: R (>= 3.5)
 SystemRequirements: MeCab
 License: MIT + file LICENSE
 Encoding: UTF-8
