@@ -12,3 +12,8 @@ Utilities for y__mattu
 See the README on
 \href{https://github.com/ymattu/ymattuR#readme}{GitHub}
 }
+\author{
+\strong{Maintainer}: Yuya Matsumura \email{mattu.yuya@gmail.com}
+
+}
+\keyword{internal}
