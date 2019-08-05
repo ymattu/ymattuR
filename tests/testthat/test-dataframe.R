@@ -1,6 +1,6 @@
 context('Data Frame')
 
-test_that("select columns without NA", {
+test_that("Select columns without NA", {
   dat <- data.frame(observation = 1:20,
                     valueA = runif(n = 20),
                     valueB = runif(n = 20),
@@ -14,3 +14,11 @@ test_that("select columns without NA", {
   res <- select_nona_cols(dat)
   expect_equal(res, answer)
 })
+
+test_that("Delete all 0 columns", {
+  dat <- iris %>%
+    mutate(col1 = 0, col2 = 0)
+  res <- del_all0_cols(dat)
+  expect_equal(res, iris)
+})
+
