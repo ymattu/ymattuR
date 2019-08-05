@@ -3,6 +3,7 @@
 #' @importFrom magrittr %>%
 #' @importFrom dplyr select_if
 #' @param df Data Frame
+#' @export
 select_nona_cols <- function(df) {
   res <- df %>%
     select_if(function(x) !any(is.na(x)))
@@ -15,6 +16,7 @@ select_nona_cols <- function(df) {
 #'
 #' @importFrom magrittr %>%
 #' @importFrom dplyr select
+#' @export
 del_all0_cols <- function(df) {
   delcols <- df %>%
     select_if(is.numeric) %>%
