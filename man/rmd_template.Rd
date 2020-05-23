@@ -4,9 +4,20 @@
 \alias{rmd_template}
 \title{#' Make new .Rmd file for Japanese.}
 \usage{
-rmd_template(file, path = ".", type = "html", systime = TRUE,
-  title = "", subtitle = "", author = "", toc = FALSE,
-  self_contained = TRUE, css = NULL, katex = FALSE, load_p = NULL)
+rmd_template(
+  file,
+  path = ".",
+  type = "html",
+  systime = TRUE,
+  title = "",
+  subtitle = "",
+  author = "",
+  toc = FALSE,
+  self_contained = TRUE,
+  css = NULL,
+  katex = FALSE,
+  load_p = NULL
+)
 }
 \arguments{
 \item{file}{Charactor. File output R Markdown file name.}
