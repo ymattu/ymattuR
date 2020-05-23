@@ -10,14 +10,14 @@ test_that("Select columns without NA", {
   dat[2:10, 4] <- NA
   dat[7:20, 5] <- NA
   answer <- dat %>%
-    select_if(function(x) !any(is.na(x)))
+    dplyr::select_if(function(x) !any(is.na(x)))
   res <- select_nona_cols(dat)
   expect_equal(res, answer)
 })
 
 test_that("Delete all 0 columns", {
   dat <- iris %>%
-    mutate(col1 = 0, col2 = 0)
+    dplyr::mutate(col1 = 0, col2 = 0)
   res <- del_all0_cols(dat)
   expect_equal(res, iris)
 })

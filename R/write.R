@@ -1,6 +1,7 @@
 #' Write to clipboard
 #'
 #' @param x dataframe or matrix
+#' @importFrom utils write.table
 #' @export
 write_clipboard <- function(x) {
     os <- get_os()
